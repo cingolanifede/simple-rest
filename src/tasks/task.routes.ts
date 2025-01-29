@@ -25,8 +25,8 @@ tasksRouter.post("/tasks", validateTask, (req: Request, res: Response) => {
         return res.status(StatusCodes.INTERNAL_SERVER_ERROR).json({ error })
     }
 })
-
-tasksRouter.put("/tasks/:id", (req: Request, res: Response) => {
+// PUT /tasks - Update a task
+tasksRouter.put("/tasks/:id", validateTask, (req: Request, res: Response) => {
     try {
         const id = parseInt(req.params.id)
         const { title, completed } = req.body;
