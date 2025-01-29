@@ -11,7 +11,7 @@ A simple RESTful API to manage a list of tasks using Node.js and Express with Ty
 First, open your terminal and clone the repository:
 
 ```bash
-git clone https://github.com/your-username/task-management-api.git
+git clone https://github.com/cingolanifede/task-management-api.git
 cd task-management-api
 ```
 
@@ -118,28 +118,6 @@ const PORT = process.env.PORT || 3000;
 ```
 
 ---
-
-## Project Structure
-```
-/task-management-api
-│── src/
-│   ├── index.ts      # Main server file
-│   ├── routes.ts     # API Routes
-│   ├── middleware.ts # Validation middleware
-│── package.json
-│── tsconfig.json
-│── README.md
-```
-
----
-
-## Uninstalling
-If you want to remove the project:
-
-```bash
-cd ..
-rm -rf task-management-api
-```
 
 ---
 
